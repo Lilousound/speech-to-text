@@ -87,7 +87,15 @@ i{
   margin-right: 10px;
   color: red;
 }
-
+#erase{
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-family: var(--second-font);
+  position: relative;
+  left: -160px;
+}
 
 
 @media screen and  (max-width: 720px) {

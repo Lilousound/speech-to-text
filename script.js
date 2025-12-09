@@ -1,6 +1,9 @@
 const recordBtn = document.getElementById('recordBtn');
 const resultBox = document.getElementById('resultBox');
 const errorTxt = document.getElementById('errorTxt');
+const eraseBtn = document.getElementById('erase');
+
+
 
 let isRecording = false;
 let speechObj = null;
@@ -41,3 +44,7 @@ function stopRecording() {
   recordBtn.innerHTML = `<i class="fa-solid fa-microphone-lines"></i>`;
   isRecording = false;
 }
+
+eraseBtn.addEventListener('click', () => {
+  resultBox.textContent = '';
+});
