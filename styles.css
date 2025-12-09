@@ -1,9 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --main-font: 'Arial, sans-serif';
+  --primary-color: #384a68;
+  --secondary-color: #9BF0EE;
+  --main-font: 'Bungee Hairline', cursive;
+  --second-font: 'Orbitron', sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  margin: 0px;
+  /* background: #ffffff; */
+  background-image: url("img/floating_robot.jpg");
+  background-size: 40%;
+  background-position: 0% 40%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html, body {
+  height: 100%;
+  font-size: 18px;
+}
+
+main{
+  margin: auto;
+  padding: 60px;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: var(--main-font);
+}
+h1, h2, h3, h4, h5, h6{
+  margin-bottom: 20px;
+  letter-spacing: -0.1rem;
+}
+button{
+  padding: 10px 20px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid var(--primary-color);
+  background: linear-gradient(164deg,rgba(244, 246, 247, 0.752) 0%, rgba(136, 198, 230, 0.257) 65%, rgba(112, 222, 244, 0.687) 100%);
+  box-shadow: #aeb8bb 1px 10px 10px;
+  margin-bottom: 30px;
+}
+i{
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
 #resultBox{
-  border: 1px solid black;
-  padding: 10px;
+  margin: auto;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 20px;
   margin-top: 10px;
   background-color: white;
-  color: black;
+  color: var(--primary-color);
   width: 400px;
-  height: 200px;
+  height: 400px;
+  font-family: var(--second-font);
+  box-shadow: #aeb8bb 1px 10px 10px;
+  background: #020024;
+  background: linear-gradient(164deg,rgba(244, 246, 247, 0.752) 0%, rgba(136, 198, 230, 0.257) 65%, rgba(112, 222, 244, 0.687) 100%);
+}
+#errorTxt{
+  width: 400px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: red;
+  font-family: var(--second-font);
+}
+#errorTxt i{
+  margin-right: 10px;
+  color: red;
+}
+
+
+
+@media screen and  (max-width: 720px) {
+  #resultBox{
+    width: 350px;
+    height: 300px;
+    font-size: 14px;
+  }
 }

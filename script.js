@@ -1,5 +1,6 @@
 const recordBtn = document.getElementById('recordBtn');
 const resultBox = document.getElementById('resultBox');
+const errorTxt = document.getElementById('errorTxt');
 
 let isRecording = false;
 let speechObj = null;
@@ -7,7 +8,7 @@ let speechObj = null;
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 if (!SpeechRecognition) {        // Browser not supported
-  recordBtn.innerText = "Speech Recognition Not Supported in Firefox. Try with Chrome please";
+  errorTxt.innerHTML = `<p><i class="fa-solid fa-triangle-exclamation"></i>  Ah malheureusement, ton navigateur ne supporte pas la reconnaissance vocale. Merci d'essayer avec Google Chrome.</p>`;
   recordBtn.disabled = true;
 }
 
@@ -18,7 +19,7 @@ recordBtn.addEventListener('click', () => {
 });
 
 function startRecording() {
-  recordBtn.innerText = "J'écoute...";
+  recordBtn.innerHTML = `<i class="fa-solid fa-circle-stop" style="color: red;"></i>`;
   speechObj = new SpeechRecognition(); // nouvelle instance à chaque démarrage
   speechObj.start(); // démarrer la reconnaissance vocale
   speechObj.onresult = transcribe; // gérer les résultats
@@ -37,6 +38,6 @@ function transcribe(event) {
 function stopRecording() {
   speechObj.stop(); // arrêter la reconnaissance vocale
   speechObj = null; // réinitialiser l'objet
-  recordBtn.innerText = "Start";
+  recordBtn.innerHTML = `<i class="fa-solid fa-microphone-lines"></i>`;
   isRecording = false;
 }
