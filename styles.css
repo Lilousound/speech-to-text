@@ -16,8 +16,6 @@
 
 body {
   height: 100vh;
-  margin: 0;
-  /* overflow: hidden; */
   position: relative;
   margin: 0px;
   /* background: #ffffff; */
@@ -33,7 +31,7 @@ html, body {
 }
 
 main{
-  margin: auto;
+  margin: auto auto auto 200px;
   padding: 60px;
   text-align: center;
   color: var(--primary-color);
@@ -102,7 +100,11 @@ i{
   left: -260px;
 }
 
-
+@media screen and  (max-width: 950px) {
+  main{
+    margin: auto;
+  }
+}
 @media screen and  (max-width: 720px) {
   main{
     padding: 20px;
