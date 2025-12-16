@@ -34,12 +34,13 @@ What i have learned: **Web Speech API**, **event handling**, and **real-time dat
 - **Lightweight**: No external libraries required.
   
 ---
-
 ## 📧 **Get in Touch**
 Have questions, suggestions, or just want to chat about the project?
 **I’d love to hear from you!** 😊
 
 📩 **Email me at**: [aurelieraout@gmail.com](mailto:aurelieraout@gmail.com)
+
+🌐 **Visit my portfolio**: www.aurelieraout.com
 
 Whether it’s feedback, collaboration ideas, or even a friendly "hello," don’t hesitate to reach out!
 ---
