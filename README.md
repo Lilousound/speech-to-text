@@ -15,7 +15,7 @@ This **Speech-to-Text App** allows users to:
 - **Copy or save** the transcribed text.
 - **Stop/start recording** with a single button.
 
-Perfect for learning **Web Speech API**, **event handling**, and **real-time data processing** in JavaScript.
+What i have learned: **Web Speech API**, **event handling**, and **real-time data processing** in JavaScript.
 
 ---
 
